@@ -3,3 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;500&display=swap');
 /*font-family: 'Kumbh Sans', sans-serif;*/
 
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+p {
+    color: rgb(158, 155, 155);
+}
+h5 {
+    color: hsl(26, 100%, 55%);
+}
