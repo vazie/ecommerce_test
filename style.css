@@ -5,6 +5,8 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    width: 60%;
+    margin: auto;
 }
 nav {
     display: flex;
@@ -15,14 +17,49 @@ nav {
 ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+}
+li {
+    padding: 10px;
+    color: rgb(158, 155, 155);
+}
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+#links {
+    display: flex;
+    justify-content: left;
+}
+#logo {
+    padding-top: 30px;
+    height: 20px;
+}
+#cart_avatar {
+    display: flex;
+    flex-direction: row;
+}
+#cart {
+    padding-top: 30px;
+    height: 20px;
+}
+#avatar {
+    padding-top: 15px;
+    height: 50px;
+}
 p {
     color: rgb(158, 155, 155);
 }
 h5 {
     color: hsl(26, 100%, 55%);
+}
+#logo {
+    padding-top: 30px;
+    height: 20px;
 }
