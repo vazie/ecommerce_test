@@ -83,12 +83,14 @@ main {
 }
 .main-section {
     padding: 10px;
+    width: 50%;
+    justify-content: space-evenly;
 }
 /* The grid: Four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 25%;
-    padding: 10px;
+    width: 20%;
+    padding: 2px;
   }
   
   /* Style the images inside the grid */
@@ -96,6 +98,7 @@ main {
     opacity: 1;
     cursor: pointer;
     border-radius: 10px;
+    width: 100%;
   }
   
   .column img:hover {
@@ -104,25 +107,17 @@ main {
     border-color: hsl(26, 100%, 55%);
   }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns 
 .row:after {
     content: "";
     display: table;
     clear: both;
   }
-
+*/
   /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
     position: relative;
     display: none;
-  }
-  /* Expanding image text */
-#imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
   }
   /* Closable button inside the image */
 .closebtn {
