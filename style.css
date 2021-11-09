@@ -11,9 +11,14 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    height: auto;
     border-bottom: 1px solid rgb(202, 199, 199);
+    width: 100%;
+}
+#nav_bar {
+    display: flex;
+    justify-content: flex-start;
 }
 ul {
     display: flex;
@@ -30,7 +35,6 @@ li {
 li a {
     display: block;
     text-decoration: none;
-    float: left;
     color: rgb(175, 173, 173);
 }
 li a:hover {
@@ -51,6 +55,9 @@ li a:hover {
 #cart_avatar {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 #cart {
     padding-top: 30px;
