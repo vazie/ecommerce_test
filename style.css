@@ -77,6 +77,13 @@ h5 {
     padding-top: 30px;
     height: 20px;
 }
+main {
+    display: flex;
+    flex-direction: row;
+}
+.main-section {
+    padding: 10px;
+}
 /* The grid: Four equal columns that floats next to each other */
 .column {
     float: left;
