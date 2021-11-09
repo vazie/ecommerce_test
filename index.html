@@ -30,6 +30,31 @@
 <main>
   <div id="image-section">
 
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width:100%">
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
+
+    <!-- The grid: four columns -->
+    <div class="row">
+      <div class="column">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="Shoes1" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="Shoes2" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="Shoes3" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="Shoes4" onclick="myFunction(this);">
+      </div>
+    </div>
   </div>
   <div id="product-info">
   <h5>SNEAKER COMPANY</h5>
@@ -56,5 +81,17 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+<script>
+  function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+}
+</script>
 </body>
 </html>
